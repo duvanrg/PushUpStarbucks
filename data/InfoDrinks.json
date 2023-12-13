@@ -1,0 +1,21 @@
+{
+    "bebidas": [
+      {
+        "nombre": "Green Tea Latte Helado",
+        "descripcion": "El Green Tea Latte Helado de Starbucks es una refrescante y deliciosa combinación de té verde matcha premium, leche helada y hielo, cuidadosamente mezclados para crear una bebida suave y equilibrada. El distintivo sabor a té verde se fusiona armoniosamente con la cremosidad de la leche, ofreciendo una experiencia refrescante con un toque de dulzura y un característico tono verde esmeralda. Perfecto para aquellos que buscan una opción fresca y revitalizante.",
+        "imagen": "images/green_tea_latte.png"
+      },
+      {
+        "nombre": "Unicorn Frappuccino",
+        "descripcion": "El Unicorn Frappuccino de Starbucks es una experiencia mágica y colorida que cautivó a los amantes de lo extravagante. Esta bebida efímera ofrece una mezcla de colores vibrantes y sabores sorprendentes. Con una base de frappuccino sabor mango y un toque de vainilla, la bebida transforma sus tonos de manera espectacular al mezclarla, creando una gama de colores pastel. Rematada con crema batida y polvo de brillantina comestible, el Unicorn Frappuccino es una creación visualmente cautivadora con un toque juguetón en cada sorbo. Aunque ya no está en el menú regular, su memoria perdura como un ícono de la creatividad y la diversión en Starbucks.",
+        "imagen": "images/unicorn_frappuccino.png"
+      },
+      {
+        "nombre": "Strawberry Cheesecake Frappuccino",
+        "descripcion": "El Strawberry Cheesecake Frappuccino de Starbucks es una indulgencia irresistible que combina la cremosidad del cheesecake con la dulzura de las fresas frescas. Esta bebida helada está elaborada con una mezcla de frappuccino cremoso, fresas jugosas, crema batida y una delicada esencia de cheesecake. Rematada con crema batida adicional y trozos de galleta, esta creación ofrece la experiencia decadente de disfrutar de un postre clásico en forma de bebida refrescante.",
+        "imagen": "images/strawberry_cheesecake_frappuccino.png"
+        
+      }
+    ]
+  }
+  
