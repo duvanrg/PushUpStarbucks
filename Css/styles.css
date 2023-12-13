@@ -1,0 +1,467 @@
+/* 
+color a : #3266cc
+color b : #6599ff
+color c : #157ffb
+https://www.youtube.com/playlist?list=PL0umZHgBI6PCou20xz-Uajs-tV3nP7LFi
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    background-color: #3266cc;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    gap: 5%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+nav button {
+    background-color: #fff;
+    color: #000000;
+    font-size: 25px;
+    border-radius: 50px;
+    padding: 10px 45px;
+    cursor: pointer;
+}
+
+
+
+.banner {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-image: url(../images/Fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 760px;
+    gap: 30px;
+}
+
+.form {
+    background-color: #fff;
+    border-radius: 5%;
+    padding: 25px;
+    width: 67%;
+}
+
+.form .tittle {
+    width: 80%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.form .text {
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.form div {
+    display: grid;
+    place-items: center;
+    margin-bottom: 10px;
+}
+
+.banner .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-left: 5%;
+    width: 90%;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 0;
+}
+
+#form label {
+    grid-column: 1 / span 2;
+    text-align: left;
+    font-weight: bold;
+}
+
+#form input,
+#form select {
+    grid-column: 1 / span 2;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+#form .button {
+    place-self: center;
+    grid-column: 1 / span 2;
+    width: 50%;
+    height: 50px;
+    background-color: #157ffb;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.banner .conocer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 550px;
+    height: 80%;
+    margin-top: 7rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .conocer .tittle {
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.banner .conocer .text {
+    line-height: 1.4rem;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.banner .conocer button {
+    background-color: #157ffb;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 35px;
+}
+
+#que-es .grid-container {
+    display: grid;
+    grid-template-areas: 'tittle tittle'
+        'texto image';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 55px auto;
+
+}
+
+#que-es .tittle {
+    grid-area: tittle;
+    font-size: 30px;
+    place-self: center;
+}
+
+#que-es .info {
+    padding: 25px;
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-self: center;
+    width: 70%;
+    font-size: 25px;
+    text-align: center;
+    gap: 5px;
+}
+
+#que-es .image {
+    grid-area: image;
+    justify-self: center;
+    height: 400px;
+}
+
+.section-down {
+    margin: auto;
+    grid-area: down;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.section-down:active {
+    background-color: #91c6ff80;
+}
+
+.section-down .link {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.section-down .down {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    width: 50px;
+}
+
+.section-down .down::after {
+    content: "\25BD";
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.section-down .down:hover,
+.section-down .link:hover {
+    color: #157ffb;
+}
+
+#etapas {
+    display: grid;
+    grid-template-areas: 'tittle tittle tittle' 'etapa1 etapa2  etapa3' 'subtittle subtittle subtittle' 'images images images' 'down down down';
+}
+
+#etapas .tittle {
+    grid-area: tittle;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#etapas .etapa1 {
+    grid-area: etapa1;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    font-size: 25px;
+    gap: 20px;
+}
+
+#etapas .etapa2 {
+    grid-area: etapa2;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    font-size: 25px;
+    gap: 20px;
+}
+
+#etapas .etapa3 {
+    grid-area: etapa3;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    font-size: 25px;
+    gap: 20px;
+}
+
+#etapas .etapa1 .text2,
+#etapas .etapa2 .text2,
+#etapas .etapa3 .text2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#etapas .subtittle {
+    grid-area: subtittle;
+    text-align: center;
+    margin: 25px auto;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#etapas .images {
+    grid-area: images;
+    display: grid;
+    grid-template-areas: 'Image1 Image1 Image2 Image2 Image3 Image3' 'Image4 Image4 Image4 Image5 Image5 Image5';
+    column-gap: 35px;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 200px 200px;
+}
+
+#etapas .images>img {
+    display: flex;
+    place-self: center;
+}
+
+#etapas .images .image1 {
+    grid-area: Image1;
+    width: 80%;
+}
+
+
+#etapas .images .image2 {
+    grid-area: Image2;
+    width: 80%;
+}
+
+
+#etapas .images .image3 {
+    grid-area: Image3;
+    width: 80%;
+}
+
+
+#etapas .images .image4 {
+    grid-area: Image4;
+    justify-self: end;
+    margin-right: 10px;
+
+}
+
+#etapas .images .image5 {
+    grid-area: Image5;
+    justify-self: start;
+    margin-left: 10px;
+}
+
+
+#preguntas {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 13px;
+}
+
+#preguntas h2 {
+    font-size: 40px;
+}
+
+#preguntas .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #157ffb;
+    width: 45px;
+    height: 45px;
+    margin: 15px 0;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#preguntas h3 {
+    line-height: 2rem;
+    font-weight: 900;
+    font-size: 25px;
+    width: 60%;
+    text-align: center;
+}
+
+#preguntas .subtittle2,
+#preguntas .subtittle3,
+#preguntas .subtittle5 {
+    width: 85%;
+}
+
+#preguntas .text1 {
+    line-height: 1.8rem;
+    font-size: 20px;
+    width: 45%;
+    text-align: center;
+}
+
+#preguntas .text2 {
+    line-height: 1.8rem;
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+}
+
+#preguntas .text3 {
+    line-height: 1.8rem;
+    font-size: 20px;
+    width: 83%;
+    text-align: center;
+}
+
+#preguntas .mas-preguntas {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    gap: 25px;
+    width: 1000px;
+    height: 150px;
+    background-color: #157ffb;
+    border-radius: 25px;
+}
+
+#preguntas .mas-preguntas .tittle {
+    color: #fff;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+#preguntas .mas-preguntas .text {
+    color: #fff;
+    font-size: 20px;
+}
+
+#preguntas .mas-preguntas .button {
+    width: 200px;
+    background-color: #ffffff;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+    background-color: #3266cc;
+    padding: 10px;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto auto;
+}
+
+footer p {
+    font-size: 15px;
+    padding: 3px 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer .redes {
+    display: flex;
+    place-self: center;
+    gap: 5px;
+}
+
+footer .redes box-icon {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/* esto es solo para que al hacer los redirecionamientos se ajuste bien por el nav fixed */
+main section {
+    padding-top: 100px;
+}
