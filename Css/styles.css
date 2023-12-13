@@ -1,5 +1,4 @@
 :root {
-    /* --color-fondo: #fff */
     --color-gris: #bcc1c4;
     --color-verde-transparente: rgba(104, 180, 120, 0.5);
     --color-azul-transparente: rgba(65, 120, 164, 0.5);
@@ -122,7 +121,7 @@ main {
     max-height: 300px;
 }
 
-#Muestra #redes img {
+#redes img {
     height: auto;
     min-width: 15px;
 }
@@ -150,7 +149,6 @@ section {
 
 section img {
     margin: 0 20px;
-    /* Ajusta según sea necesario */
     width: 100px;
     height: 100%;
     padding: 5px;
@@ -253,15 +251,18 @@ section a {
     }
 
     #redes {
+        grid-template-rows: repeat(3, 50px);
         position: fixed;
+    }
+
+    #redes img {
+        height: auto;
+        width: 100%;
     }
 
     section {
         position: relative;
         margin-top: 50px;
     }
-#redes {
-    transform: translateY(100%);
 
-}
 }
